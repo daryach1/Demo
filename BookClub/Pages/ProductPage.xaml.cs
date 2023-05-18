@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BookClub
+namespace BookClub.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ProductPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ProductPage : Page
     {
-        public MainWindow()
+        public ProductPage()
         {
             InitializeComponent();
         }
