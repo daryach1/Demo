@@ -38,3 +38,12 @@ C:\Users\mvi\Source\Repos\BookClub\BookClub\obj\Debug\BookClub.exe
 C:\Users\mvi\Source\Repos\BookClub\BookClub\obj\Debug\BookClub.pdb
 C:\Users\mvi\Source\Repos\BookClub\BookClub\obj\Debug\Pages\StartPage.g.cs
 C:\Users\mvi\Source\Repos\BookClub\BookClub\obj\Debug\Pages\StartPage.baml
+C:\Users\mvi\Source\Repos\BookClub\BookClub\bin\Debug\EntityFramework.dll
+C:\Users\mvi\Source\Repos\BookClub\BookClub\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mvi\Source\Repos\BookClub\BookClub\bin\Debug\EntityFramework.xml
+C:\Users\mvi\Source\Repos\BookClub\BookClub\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mvi\Source\Repos\BookClub\BookClub\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\mvi\Source\Repos\BookClub\BookClub\obj\Debug\BookClub_Content.g.cs
+C:\Users\mvi\Source\Repos\BookClub\BookClub\obj\Debug\BookClub.csproj.CopyComplete
+C:\Users\mvi\Source\Repos\BookClub\BookClub\obj\Debug\Windows\ViewOrderWindow.g.cs
+C:\Users\mvi\Source\Repos\BookClub\BookClub\obj\Debug\Windows\ViewOrderWindow.baml

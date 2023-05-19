@@ -30,7 +30,65 @@
                                TextWrapping="WrapWithOverflow"/>
                 </Button.Content>
             </Button>
+            <Button x:Name="ViewOrderButton"
+                    Click="ViewOrderButton_Click"
+                    Height="40"
+                    Width="100"
+                    Background="{StaticResource AdditionalColor}"
+                    BorderBrush="Black"
+                    Margin="10,0,0,0">
+                <Button.Content>
+                    <TextBlock Text="Просмотр заказа"
+                               TextWrapping="WrapWithOverflow"/>
+                </Button.Content>
+            </Button>
         </StackPanel>
+        <!--#endregion-->
+        <!--#region DataGrid for Row 2-->
+        <DataGrid x:Name="ProductDataGrid"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  Grid.Row="1"
+                  ColumnWidth="*"
+                  RowBackground="{StaticResource AdditionalColor}"
+                  AlternatingRowBackground="White"
+                  HorizontalGridLinesBrush="{StaticResource AdditionalColor}"
+                  VerticalGridLinesBrush="Black">
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Добавить к заказу"
+                              x:Name="AddOrderMenuItem"
+                              Click="AddOrderMenuItem_Click"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Фото">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Photo}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Наименование"
+                                    Binding="{Binding NameProduct}"/>
+                <DataGridTemplateColumn Header="Описание">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Description}"
+                                       TextWrapping="WrapWithOverflow"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Производитель"
+                                    Binding="{Binding Manufacturers.NameManufacturer}"/>
+                <DataGridTextColumn Header="Цена"
+                                    Binding="{Binding Cost}"
+                                    Width="100"/>
+                <DataGridTextColumn Header="Размер скидки"
+                                    Binding="{Binding Discount}"
+                                    Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
         <!--#endregion-->
     </Grid>
 </Page>

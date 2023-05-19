@@ -64,6 +64,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Windows\ViewOrderWindow.xaml.cs">
+      <DependentUpon>ViewOrderWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="Pages\ProductPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -85,12 +88,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BookClub.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="Context\BookClub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookClub.tt</DependentUpon>
+    </Compile>
     <Compile Include="Context\BookClub.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BookClub.edmx</DependentUpon>
     </Compile>
     <Compile Include="Context\FrameClass.cs" />
+    <Compile Include="Context\Manufacturers.cs">
+      <DependentUpon>BookClub.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Orders.cs">
+      <DependentUpon>BookClub.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Points.cs">
+      <DependentUpon>BookClub.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Products.cs">
+      <DependentUpon>BookClub.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Roles.cs">
+      <DependentUpon>BookClub.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Statuses.cs">
+      <DependentUpon>BookClub.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\sysdiagrams.cs">
+      <DependentUpon>BookClub.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Users.cs">
+      <DependentUpon>BookClub.tt</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ProductPage.xaml.cs">
       <DependentUpon>ProductPage.xaml</DependentUpon>
     </Compile>
@@ -101,6 +133,10 @@
       <DependentUpon>StartWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\ViewOrderWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -140,6 +176,12 @@
     <Content Include="Context\BookClub.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BookClub.Context.cs</LastGenOutput>
+      <DependentUpon>BookClub.edmx</DependentUpon>
+    </Content>
+    <Content Include="Context\BookClub.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BookClub.edmx</DependentUpon>
+      <LastGenOutput>BookClub.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
