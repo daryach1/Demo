@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="741bcd945ebe4445833400b6c2f8c6c1" Name="Diagram1">
+        <EntityTypeShape EntityType="BookClubModel.Manufacturers" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookClubModel.Orders" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookClubModel.Points" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookClubModel.Products" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookClubModel.Roles" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookClubModel.Statuses" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookClubModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookClubModel.Users" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="BookClubModel.FK_Products_Manufacturers" ManuallyRouted="false" />
+        <AssociationConnector Association="BookClubModel.FK_Orders_Points" ManuallyRouted="false" />
+        <AssociationConnector Association="BookClubModel.FK_Orders_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="BookClubModel.FK_Orders_Statuses" ManuallyRouted="false" />
+        <AssociationConnector Association="BookClubModel.FK_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BookClubModel.FK_Users_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

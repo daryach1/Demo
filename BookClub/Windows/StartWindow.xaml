@@ -7,21 +7,20 @@
         mc:Ignorable="d"
         Title="Книжный клуб"
         Icon="/Resources/BookIcon.ico"
-        Height="450" 
+        Height="550" 
         Width="800"
         WindowStartupLocation="CenterScreen"
-        MinHeight="450"
+        MinHeight="550"
         MinWidth="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="150"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <!--#region StackPanel for Row 1-->
         <StackPanel Orientation="Vertical"
                     Grid.Row="0"
-                    HorizontalAlignment="Center"
-                    Margin="0,0,0,10">
+                    Margin="30,0,0,10">
             <TextBlock Text="Книжный клуб"
                        Height="55"
                        FontSize="35"
@@ -29,44 +28,28 @@
             <Label FontSize="20"
                    FontWeight="Bold"
                    x:Name="TitlePageLabel"
-                   HorizontalContentAlignment="Center"/>
+                   HorizontalContentAlignment="Center"
+                   Height="40"/>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        Margin="0,0,30,0">
+                <Button x:Name="BackButton"
+                        Click="BackButton_Click"
+                        Height="35"
+                        Width="100"
+                        Background="{StaticResource AdditionalColor}"
+                        Content="Назад"
+                        FontSize="20"
+                        FontWeight="Bold"/>
+            </StackPanel>
         </StackPanel>
         <!--#endregion-->
         <!--#region Frame and StackPanel for Row 2-->
         <Frame x:Name="MainFrame"
                NavigationUIVisibility="Hidden"
-               Grid.Row="1"/>
-        <StackPanel Orientation="Vertical"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Grid.Row="1"
-                    x:Name="MainStackPanel">
-            <Button x:Name="AuthoButton"
-                    Click="AuthoButton_Click"
-                    Height="70"
-                    Width="200"
-                    Margin="0,-20,0,0"
-                    BorderBrush="Black"
-                    Content="Войти"
-                    FontWeight="Bold"
-                    FontSize="25"
-                    Background="{StaticResource AdditionalColor}"/>
-            <Button x:Name="GuestButton"
-                    Click="GuestButton_Click"
-                    Height="70"
-                    Width="200"
-                    BorderBrush="Black"
-                    Margin="0,30,0,0"
-                    FontWeight="Bold"
-                    FontSize="25"
-                    Background="{StaticResource AdditionalColor}">
-                <Button.Content>
-                    <TextBlock Text="Продолжить как гость"
-                               TextWrapping="WrapWithOverflow"
-                               FontSize="20"/>
-                </Button.Content>
-            </Button>
-        </StackPanel>
+               Grid.Row="1"
+               ContentRendered="MainFrame_ContentRendered"/>
+        
         <!--#endregion-->
     </Grid>
 </Window>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\prygu\source\repos\BookClub\BookClub\obj\Debug\
+C:\Users\mvi\Source\Repos\BookClub\BookClub\obj\Debug\
 BookClub
 none
 false
 DEBUG;TRACE
-C:\Users\prygu\source\repos\BookClub\BookClub\App.xaml
-2214799571
+C:\Users\mvi\Source\Repos\BookClub\BookClub\App.xaml
+3-2111650796
 
-7-961597325
+8-960182726
 13-1310406943
-Pages\ProductPage.xaml;Windows\StartWindow.xaml;
+Pages\ProductPage.xaml;Pages\StartPage.xaml;Windows\StartWindow.xaml;
 
 False
 

@@ -1,0 +1,45 @@
+﻿<Page x:Class="BookClub.Pages.StartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BookClub.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StartPage"
+      Background="White">
+
+    <Grid>
+        <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Grid.Row="1"
+                    x:Name="MainStackPanel">
+            <Button x:Name="AuthoButton"
+                    Click="AuthoButton_Click"
+                    Height="70"
+                    Width="200"
+                    Margin="0,-20,0,0"
+                    BorderBrush="Black"
+                    Content="Войти"
+                    FontWeight="Bold"
+                    FontSize="25"
+                    Background="{StaticResource AdditionalColor}"/>
+            <Button x:Name="GuestButton"
+                    Click="GuestButton_Click"
+                    Height="70"
+                    Width="200"
+                    BorderBrush="Black"
+                    Margin="0,30,0,0"
+                    FontWeight="Bold"
+                    FontSize="25"
+                    Background="{StaticResource AdditionalColor}">
+                <Button.Content>
+                    <TextBlock Text="Продолжить как гость"
+                               TextWrapping="WrapWithOverflow"
+                               FontSize="20"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>
